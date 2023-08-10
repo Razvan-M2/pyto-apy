@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "c646ee24-3313-44b4-9652-f0ef31d4e1fb",
+		"name": "Geo - Border API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5120223"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{LOCAL_ROOT}}/triangulate?latitude=23.562104823847168&longitude=48.35631343382287",
+					"host": [
+						"{{LOCAL_ROOT}}"
+					],
+					"path": [
+						"triangulate"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "23.562104823847168"
+						},
+						{
+							"key": "longitude",
+							"value": "48.35631343382287"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "LOCAL_ROOT",
+			"value": "http://127.0.0.1:5000",
+			"type": "string"
+		}
+	]
+}
